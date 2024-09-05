@@ -1,0 +1,184 @@
+/* styles.css */
+
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #2c3e50;
+    line-height: 1.6;
+    font-size: 18px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Fade-in animation for the body */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(135deg, #4a69bd, #6a89cc);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slideInDown 1s ease;
+}
+
+/* Slide-in animation for the header */
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 300;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: background 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Section styling */
+section#home {
+    padding: 60px;
+    text-align: center;
+    background-color: #eaf0f9;
+    border-radius: 10px;
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease;
+}
+
+/* Fade-in and move up animation for the section */
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+section#home h2 {
+    font-size: 2.5em;
+    color: #4a69bd;
+    margin-bottom: 20px;
+}
+
+section#home p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #34495e;
+}
+
+/* Image styling with hover animation */
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #4a69bd;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    margin: 30px 0;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+footer {
+    background-color: #4a69bd;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+}
+
+footer p {
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+/* Button styling with hover and pulse animation */
+button {
+    background-color: #4a69bd;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1em;
+    animation: pulse 1.5s infinite;
+}
+
+button:hover {
+    background-color: #6a89cc;
+}
+
+/* Pulse animation for button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
